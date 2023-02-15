@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFAB6F82299CE06700F88C16 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAB6F81299CE06700F88C16 /* Task.swift */; };
+		BFAB6F85299CE17900F88C16 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFAB6F83299CE17900F88C16 /* Tasks.xcdatamodeld */; };
 		BFECEF672997A2C0001D2803 /* TasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECEF662997A2C0001D2803 /* TasksApp.swift */; };
 		BFECEF692997A2C0001D2803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECEF682997A2C0001D2803 /* ContentView.swift */; };
 		BFECEF6B2997A2C1001D2803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFECEF6A2997A2C1001D2803 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFAB6F81299CE06700F88C16 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BFAB6F84299CE17900F88C16 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		BFECEF632997A2C0001D2803 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECEF662997A2C0001D2803 /* TasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksApp.swift; sourceTree = "<group>"; };
 		BFECEF682997A2C0001D2803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			children = (
 				BFECEF742997A337001D2803 /* TaskManager.swift */,
 				BFECEF792997A3A8001D2803 /* Storage */,
+				BFAB6F81299CE06700F88C16 /* Task.swift */,
 			);
 			path = Management;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BFECEF772997A3A3001D2803 /* CoreDataStorage.swift */,
+				BFAB6F83299CE17900F88C16 /* Tasks.xcdatamodeld */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -161,6 +167,8 @@
 			files = (
 				BFECEF782997A3A3001D2803 /* CoreDataStorage.swift in Sources */,
 				BFECEF752997A337001D2803 /* TaskManager.swift in Sources */,
+				BFAB6F85299CE17900F88C16 /* Tasks.xcdatamodeld in Sources */,
+				BFAB6F82299CE06700F88C16 /* Task.swift in Sources */,
 				BFECEF692997A2C0001D2803 /* ContentView.swift in Sources */,
 				BFECEF672997A2C0001D2803 /* TasksApp.swift in Sources */,
 			);
@@ -363,6 +371,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFAB6F83299CE17900F88C16 /* Tasks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFAB6F84299CE17900F88C16 /* Tasks.xcdatamodel */,
+			);
+			currentVersion = BFAB6F84299CE17900F88C16 /* Tasks.xcdatamodel */;
+			path = Tasks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFECEF5B2997A2C0001D2803 /* Project object */;
 }
