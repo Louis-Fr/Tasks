@@ -12,6 +12,7 @@ struct TaskListView: View {
     @State var newTaskName: String = ""
     @State var taskManager = TaskManager()
     
+    /// Pas de persistance, revient à 0 
 //    @State var taskList = [
 //        Task(name: "Terminer le cours"),
 //        Task(name: "Reprendre le sport"),
@@ -30,7 +31,11 @@ struct TaskListView: View {
             
             VStack(alignment: HorizontalAlignment.leading) {
                 ForEach(taskManager.taskList) { task in
-                    TaskCell(task: task)                }
+                    TaskCell(task: task)
+                        .onTapGesture {
+                            userTouchTask(task)
+                        }
+                }
             }
         }
     }
@@ -41,6 +46,11 @@ struct TaskListView: View {
             taskManager.addTask(withName: newTaskName)
             newTaskName = ""
         }
+    }
+    
+    
+    func userTouchTask(_ task: Task) {
+        taskManager.toggleTaskStatus(withId: task.id)
     }
 }
 struct TaskListView_Previews: PreviewProvider {
